@@ -49,6 +49,7 @@ export default function Footer() {
           </p>
           <p className="text-white/80 font-medium mb-2">"Gracias por visitarnos. Aquí el café sabe a Perú."</p>
           <p className="text-white/60 text-sm">© 2024 Las Tres Regiones. Todos los derechos reservados.</p>
+          Elaborado por <a href="https://www.linkedin.com/in/ruth-pe%C3%B1a-valdez-65604a27b/" target="_blank" rel="noopener noreferrer" className="text-white/70 hover:text-pink-400 transition-colors">Ruth Peña Valdez</a>
         </div>
       </div>
     </footer>

@@ -43,7 +43,7 @@ export default function Hero({ scrollToSection }: HeroProps) {
         </div>
       </div>
       {/* Botón para bajar a la siguiente sección */}
-      <div className="absolute bottom-8 left-0 right-0 flex justify-center z-20">
+      <div className="absolute left-0 right-0 flex justify-center z-20 bottom-4 md:bottom-8">
         <button
           onClick={() => {
             const aboutSection = document.getElementById("about")
@@ -52,10 +52,10 @@ export default function Hero({ scrollToSection }: HeroProps) {
               aboutSection.scrollIntoView({ behavior: "smooth", block: isMobile ? "start" : "center" })
             }
           }}
-          className="bg-leaf-green/90 hover:bg-leaf-green text-white rounded-full p-3 shadow-lg transition-colors focus:outline-none focus:ring-2 focus:ring-leaf-green"
+          className="bg-leaf-green/90 hover:bg-leaf-green text-white rounded-full p-2 md:p-3 shadow-lg transition-colors focus:outline-none focus:ring-2 focus:ring-leaf-green"
           aria-label="Bajar a la siguiente sección"
         >
-          <svg xmlns="http://www.w3.org/2000/svg" className="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 md:h-7 md:w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
           </svg>
         </button>
